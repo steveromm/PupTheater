@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Roboto', sans-serif; 
+  font-size: 16px;
+}
+
+h1 {
+  font-family: 'Limelight', sans-serif;
+}
+
+/* Nav Bar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  background-color: rgb(221, 153, 51);
+  position: fixed;
+  z-index: 1;
+  margin: 0 0 0 0;
+}
+
+.navbar .logo {
+  color: white;
+  margin: 0 0 0 2rem;
+  font-family: 'Roboto', sans-serif; 
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  flex-shrink: 1;
+  font-family: 'Roboto', sans-serif; 
+  font-size: 1.5rem;
+}
+
+.navbar li {
+  padding: 0 2rem 0 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width:930px) {
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .navbar ul {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width:560px) {
+  .navbar {
+    display: none;
+  }
+}
+
+/* Title & Banner */
+.banner {
+  height: 40rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../Resources/Images/PupTheaterNew.jpg);
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  padding: 5rem 0 0 0;
+}
+
+.banner h1 {
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+  margin: 20rem 0 0 0;
+}
+
+.banner p {
+  color: rgb(255, 255, 255);
+  font-size: 1.75rem;
+  font-weight: 300;
+  padding: 0 0 0 0rem;
+}
+
+@media only screen and (max-width:930px) {
+  .banner h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 15rem 0 0 0;
+  }
+
+  .banner p {
+    font-size: 1.25rem;
+    max-width: 55%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width:560px) {
+  .banner {
+    max-height: 20rem;
+    justify-content: flex-end;
+  }
+
+  .banner h1 {
+    font-size: 2.75rem;
+    margin: 0 .5rem 3rem .5rem;
+  }
+
+  .banner p {
+    display: none;
+  }
+}
+
+
+/* Info Section */
+.info {
+  padding: 5rem 1.25rem 5rem 1.25rem;
+  background-color: rgb(173, 46, 46);
+}
+
+.info h2 {
+  padding: 1rem 0;
+  font-weight: 400;
+  color: rgb(160, 240, 185);
+}
+
+.info p {
+  color: rgb(255, 255, 255);
+  padding: 1rem 0;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* Theater Experience Section */
+.experience {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(../Resources/Images/TheaterCurtains.jpg);
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  padding: 4rem 1rem 4rem 1rem;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  max-width: 25rem;
+  max-height: 25rem;
+  overflow: hidden;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+@media only screen and (max-width:959px) {
+  .experience {
+    padding:2rem 0;
+  }
+
+  .image-container {
+    min-width: 100%;
+    max-height: 100%;
+    padding: 1rem 0;
+  }
+
+  .image-container img {
+    padding: 0 0;
+  }
+}
+
+/* Quote */
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  background-color: rgb(51, 105, 221);
+  padding: 2rem;
+}
+
+.quote-container-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 90%;
+  padding: 3rem;
+}
+
+.quote-container-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 90%;
+  padding: 3rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.top {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(211, 211, 211);
+  padding: 0 0 1rem 0;
+}
+
+.bottom {
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgb(211, 211, 211);
+  padding: 0 12% 0 0;
+}
+
+@media only screen and (max-width: 560px) {
+  .quote-container-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+
+  .quote-container-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+
+  .left {
+    width: 100%;
+  }
+  
+  .right {
+    width: 100%;
+  }
+
+  .top {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .bottom {
+    font-size: .85rem;
+  }
+}
+/* Famous Pup Actors (see experience section for CSS rules) */
+.actor-title {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  font-family: 'Limelight', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.portraits {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-color: white;
+  padding: 4rem 1rem 4rem 1rem;
+  flex-wrap: wrap;
+}
+
+.image-name {
+  max-width: 25rem;
+  min-height: 25rem;
+  overflow: hidden;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image-name img {
+  max-width: 100%;
+  padding: 0 0 1rem 0;
+}
+
+.image-name h3 {
+  font-size: 1.75rem;
+  text-align: center;
+  color: rgb(171, 114, 0);
+  font-family: 'Limelight', sans-serif;
+}
+
+@media only screen and (max-width:959px) {
+  .actor-title {
+    padding: 2rem 0 1rem 0;
+  }
+  
+  .portraits {
+    padding:0 0 3rem 0;
+  }
+
+  .image-name {
+    min-width: 100%;
+    max-height: 100%;
+    padding: 1rem 0;
+  }
+
+  .image-name img {
+    padding: 0 0;
+  }
+}
+
+/* Schedule */
+.schedule {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: white;
+  padding: 4rem 1rem 4rem 1rem;
+  flex-wrap: wrap;
+  background-color: rgb(51, 105, 221);
+}
+
+.buy-now {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buy-now img {
+  max-width: 100%;
+  padding: 0 0 1rem 0;
+}
+
+.buy-now h3 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 0 0 1rem 0;
+  color: rgb(211, 211, 211);
+  font-family: 'Limelight', sans-serif;
+}
+
+.buy-now p {
+  text-align: center;
+  color: rgb(211, 211, 211);
+}
+
+/* Footer */
+
+.contact {
+  min-height: 3rem;
+  width: 100%;
+  background-color: rgb(221, 153, 51);
+  align-items: center;
+}
+
+.contact ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.contact li {
+  padding: 1rem;
+}
+
+.contact ul a {
+  text-decoration: none;
+  color: black;
+}
